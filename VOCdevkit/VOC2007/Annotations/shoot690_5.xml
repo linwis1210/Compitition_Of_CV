@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image2</folder>
+	<filename>shoot690_5.jpg</filename>
+	<path>D:\柑橘花\image2\shoot690_5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>608</width>
+		<height>608</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>shoot</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>357</xmin>
+			<ymin>467</ymin>
+			<xmax>428</xmax>
+			<ymax>579</ymax>
+		</bndbox>
+	</object>
+</annotation>

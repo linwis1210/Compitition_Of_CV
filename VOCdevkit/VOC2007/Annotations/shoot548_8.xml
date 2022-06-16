@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<annotation>
+		<folder>driving_annotation_dataset</folder>
+		<filename>shoot548_8.jpg</filename>
+		<size>
+			<width>608</width>
+			<height>608</height>
+			<depth>3</depth>
+		</size>
+		<object>
+			<name>shoot</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
+			<difficult>0</difficult>
+			<bndbox>
+				<xmin>30</xmin>
+				<ymin>405</ymin>
+				<xmax>168</xmax>
+				<ymax>522</ymax>
+			</bndbox>
+		</object>
+	</annotation>

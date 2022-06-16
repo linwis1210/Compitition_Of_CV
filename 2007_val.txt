@@ -1,0 +1,38 @@
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot110_3.jpg 3,324,72,426,0 74,342,141,422,0 31,430,95,485,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot166_3.jpg 79,441,227,541,0 410,258,462,322,0 3,425,60,565,0 355,111,436,212,0 426,322,526,378,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot169_2.jpg 452,296,549,404,0 475,416,533,481,0 483,420,593,524,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot18_4.jpg 518,387,570,500,0 560,252,609,345,0 477,534,518,594,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot213_3.jpg 4,223,101,372,0 83,133,206,287,0 246,1,368,193,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot229_5.jpg 250,345,351,491,0 349,281,450,385,0 384,411,482,545,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot251_2.jpg 296,323,457,420,0 472,240,584,368,0 482,52,592,227,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot257_5.jpg 425,199,609,478,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot28_5.jpg 246,130,485,343,0 439,223,562,340,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot2_6.jpg 445,56,585,210,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot31_5.jpg 195,155,408,321,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot334_5.jpg 441,295,516,428,0 512,285,584,407,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot339_5.jpg 523,210,604,392,0 144,357,203,444,0 205,330,296,442,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot355_5.jpg 268,302,369,461,0 380,241,506,405,0 368,337,447,474,0 349,462,445,545,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot363_5.jpg 114,127,237,390,0 178,250,341,456,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot425_6.jpg 269,9,405,157,0 93,500,189,606,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot443_6.jpg 206,2,458,130,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot452_5.jpg 274,311,461,459,0 291,453,390,599,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot456_5.jpg 117,208,222,326,0 262,419,378,531,0 305,319,433,422,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot45_9.jpg 80,8,329,239,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot514_5.jpg 369,362,486,504,0 218,454,300,551,0 104,496,216,593,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot538_5.jpg 115,425,284,599,0 249,438,365,575,0 381,351,587,509,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot554_5.jpg 171,225,234,303,0 246,244,324,324,0 4,276,53,353,0 48,274,112,358,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot557_5.jpg 2,191,226,410,0 250,236,504,425,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot600_5.jpg 302,321,382,460,0 348,374,430,467,0 263,339,316,461,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot620_5.jpg 9,261,165,444,0 155,288,237,435,0 260,258,360,393,0 332,248,449,391,0 149,216,261,351,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot624_5.jpg 205,289,273,400,0 398,178,469,275,0 478,208,534,274,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot639_5.jpg 71,8,176,144,0 352,318,439,466,0 443,351,562,498,0 166,374,276,453,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot645_1.jpg 3,350,119,523,0 109,386,247,552,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot649_5.jpg 49,124,241,345,0 133,413,252,502,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot651_8.jpg 3,371,102,507,0 261,455,402,605,0 398,503,507,605,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot660_8.jpg 91,56,195,135,0 232,317,368,435,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot694_8.jpg 361,320,471,442,0 469,286,596,405,0 224,307,327,386,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot6_6.jpg 455,66,523,160,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot80_2.jpg 518,303,609,474,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot83_4.jpg 266,477,363,609,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot83_8.jpg 169,202,265,384,0
+D:\Code\GithubRero\yolov4-pytorch\VOCdevkit/VOC2007/JPEGImages/shoot90_2.jpg 258,473,340,597,0 141,326,177,394,0 176,331,207,393,0 325,520,380,578,0 416,368,447,410,0
