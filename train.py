@@ -188,13 +188,13 @@ if __name__ == "__main__":
     #                           Adam可以使用相对较小的UnFreeze_Epoch
     #   Unfreeze_batch_size     模型在解冻后的batch_size
     #------------------------------------------------------------------#
-    UnFreeze_Epoch      = 300
+    UnFreeze_Epoch      = 500
     Unfreeze_batch_size = 4
     #------------------------------------------------------------------#
     #   Freeze_Train    是否进行冻结训练
     #                   默认先冻结主干训练后解冻训练。
     #------------------------------------------------------------------#
-    Freeze_Train        = True
+    Freeze_Train        = False
     
     #------------------------------------------------------------------#
     #   其它训练参数：学习率、优化器、学习率下降有关
@@ -231,11 +231,11 @@ if __name__ == "__main__":
     #------------------------------------------------------------------#
     #   save_period     多少个epoch保存一次权值
     #------------------------------------------------------------------#
-    save_period         = 10
+    save_period         = 100
     #------------------------------------------------------------------#
     #   save_dir        权值与日志文件保存的文件夹
     #------------------------------------------------------------------#
-    save_dir            = 'logs/yolo4'
+    save_dir            = 'logs/yolo4_0'
     #------------------------------------------------------------------#
     #   eval_flag       是否在训练时进行评估，评估对象为验证集
     #                   安装pycocotools库后，评估体验更佳。
@@ -269,12 +269,12 @@ if __name__ == "__main__":
         dist.init_process_group(backend="nccl")
         local_rank  = int(os.environ["LOCAL_RANK"])
         rank        = int(os.environ["RANK"])
-        device      = torch.device("cuda", local_rank)
+        device      = torch.device("cuda:1", local_rank)
         if local_rank == 0:
             print(f"[{os.getpid()}] (rank = {rank}, local_rank = {local_rank}) training...")
             print("Gpu Device Count : ", ngpus_per_node)
     else:
-        device          = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        device          = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
         local_rank      = 0
         
     #------------------------------------------------------#
@@ -343,6 +343,8 @@ if __name__ == "__main__":
         scaler = None
 
     model_train     = model.train()
+    print("1")
+    model_train.to(device)
     #----------------------------#
     #   多卡同步Bn
     #----------------------------#
@@ -351,17 +353,17 @@ if __name__ == "__main__":
     elif sync_bn:
         print("Sync_bn is not support in one gpu or not distributed.")
 
-    if Cuda:
-        if distributed:
-            #----------------------------#
-            #   多卡平行运行
-            #----------------------------#
-            model_train = model_train.cuda(local_rank)
-            model_train = torch.nn.parallel.DistributedDataParallel(model_train, device_ids=[local_rank], find_unused_parameters=True)
-        else:
-            model_train = torch.nn.DataParallel(model)
-            cudnn.benchmark = True
-            model_train = model_train.cuda()
+    # if Cuda:
+    #     if distributed:
+    #         #----------------------------#
+    #         #   多卡平行运行
+    #         #----------------------------#
+    #         model_train = model_train.to(device)
+    #         model_train = torch.nn.parallel.DistributedDataParallel(model_train, device_ids=[local_rank], find_unused_parameters=True)
+    #     else:
+    #         model_train = torch.nn.DataParallel(model)
+    #         cudnn.benchmark = True
+    #         model_train = model_train.to(device)
 
     #---------------------------#
     #   读取数据集对应的txt
@@ -542,8 +544,7 @@ if __name__ == "__main__":
                 train_sampler.set_epoch(epoch)
 
             set_optimizer_lr(optimizer, lr_scheduler_func, epoch)
-
-            fit_one_epoch(model_train, model, yolo_loss, loss_history, eval_callback, optimizer, epoch, epoch_step, epoch_step_val, gen, gen_val, UnFreeze_Epoch, Cuda, fp16, scaler, save_period, save_dir, local_rank)
+            fit_one_epoch(model_train, model, yolo_loss, loss_history, eval_callback, optimizer, epoch, epoch_step, epoch_step_val, gen, gen_val, UnFreeze_Epoch, Cuda, fp16, scaler, save_period, save_dir, local_rank, device)
                         
             if distributed:
                 dist.barrier()
